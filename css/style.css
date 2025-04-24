@@ -105,27 +105,32 @@ img {
 
 /* Header */
 header {
-    background-color: var(--darker-color);
-    box-shadow: var(--box-shadow);
-    position: sticky;
+    background-color: var(--primary-color);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
     top: 0;
-    z-index: 100;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
+
 }
 
 .logo h1 {
-    color: #d0cac0;
+    color: var(--white);
     font-size: 1.8rem;
+    margin: 0;
 }
 
 nav ul {
     display: flex;
+    gap: 1.5rem;
+    align-items: center;
 }
 
 nav ul li {
